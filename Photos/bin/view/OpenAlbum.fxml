@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OpenAlbumController">
+   <children>
+      <ListView fx:id="photoList" layoutX="14.0" layoutY="60.0" prefHeight="200.0" prefWidth="380.0" />
+      <TextField layoutX="14.0" layoutY="29.0" text="Photos:" />
+      <Button fx:id="DisplaySelected" layoutX="14.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleDisplaySelectedButtonAction" text="Display Selected" />
+      <Button fx:id="EditTags" layoutX="172.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleEditTagsButtonAction" prefHeight="31.0" prefWidth="85.0" text="Edit Tags" />
+      <Button fx:id="DeletePhoto" layoutX="108.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleDeletePhotoButtonAction" text="Delete Selected Photo" />
+      <Button fx:id="AddPhoto" layoutX="11.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleAddPhotoButtonAction" text="Add Photo" />
+      <Button fx:id="CopyMovePhoto" layoutX="285.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleCopyMovePhotoButtonAction" text="Copy / Move" />
+      <Button fx:id="EditCaption" layoutX="286.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleEditCaptionButtonAction" text="Edit/Caption" />
+      <Button fx:id="Slideshow" layoutX="99.0" layoutY="389.0" mnemonicParsing="false" onAction="#handleSlideshowButtonAction" prefHeight="40.0" prefWidth="87.0" text="Slideshow" />
+      <Button fx:id="Logout" layoutX="14.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleLogoutButtonAction" prefHeight="31.0" prefWidth="128.0" text="Logout" />
+      <Button fx:id="ExitApplication" layoutX="263.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleExitButtonAction" text="Exit/Application" />
+      <Button fx:id="Back" layoutX="237.0" layoutY="389.0" mnemonicParsing="false" onAction="#handleBackButtonAction" prefHeight="40.0" prefWidth="85.0" text="Back" />
+   </children>
+</AnchorPane>

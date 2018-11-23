@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserController">
+   <children>
+      <AnchorPane prefHeight="408.0" prefWidth="343.0">
+         <children>
+            <ListView fx:id="albumList" layoutX="99.0" layoutY="49.0" prefHeight="161.0" prefWidth="157.0" />
+            <TextField layoutX="16.0" layoutY="11.0" text="Album:" />
+          
+            
+            
+            
+            <Button fx:id="CreateAlbum" layoutX="13.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleCreateNewAlbumButtonAction" text="Create New Album" />
+            <Button fx:id="DeleteAlbum" layoutX="200.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleDeleteAlbumButtonAction" text="Delete Album" />
+            <Button fx:id="SearchAlbum" layoutX="255.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleSearchAlbumButtonAction" text="Search" />
+            <Button fx:id="RenameAlbum" layoutX="8.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleRenameAlbumButtonAction" text="Rename Album" />
+            <Button fx:id="OpenAlbum" layoutX="140.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleAlbumButtonAction" text="Open Album" />
+            <Button fx:id="Logout" layoutX="13.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleLogoutButtonAction" text="Logout" />
+            <Button fx:id="Exit" layoutX="234.0" layoutY="357.0" mnemonicParsing="false" prefHeight="31.0" onAction="#handleExitButtonAction" prefWidth="83.0" text="Exit" />
+            
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

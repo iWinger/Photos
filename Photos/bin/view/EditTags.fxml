@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.EditTagsController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0">
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="378.0">
+               <children>
+                  <ListView fx:id="tagList" layoutX="-6.0" layoutY="17.0" prefHeight="223.0" prefWidth="358.0" />
+                  <Button fx:id="Add" layoutX="25.0" layoutY="368.0" mnemonicParsing="false" onAction="#handleAddButtonAction" prefHeight="31.0" prefWidth="128.0" text="Add" />
+                  <Button fx:id="Back" layoutX="125.0" layoutY="406.0" mnemonicParsing="false" onAction="#handleBackButtonAction" prefHeight="31.0" prefWidth="128.0" text="Back" />
+                  
+                  <Button fx:id="Logout" layoutX="25.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleLogoutButtonAction" prefHeight="31.0" prefWidth="128.0" text="Logout" />
+                  <Button fx:id="Exit" layoutX="200.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleExitButtonAction" prefHeight="31.0" prefWidth="128.0" text="Exit Application" />
+                  <Text fx:id="Tags" layoutX="-6.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags" />
+                  <Text fx:id="SelectTagType" layoutX="19.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a tag type from the list:" />
+                  <Text fx:id="EnterTagType" layoutX="19.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a new tag type:" />
+                  <Text fx:id="ValueTag" layoutX="19.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Value of new tag:" />
+                  <Text fx:id="OR" layoutX="81.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" />
+                  <TextField fx:id="NewTagType" layoutX="153.0" layoutY="308.0"/>
+                  <TextField fx:id="NewTagValue" layoutX="133.0" layoutY="334.0"/>
+                  <ComboBox fx:id="TagListCB" layoutX="199.0" layoutY="262.0" prefWidth="150.0" promptText="Tags"/>
+                  <Button layoutX="200.0" layoutY="368.0" mnemonicParsing="false" onAction="#handleDeleteButtonAction" prefHeight="31.0" prefWidth="128.0" text="Delete Selected Tag" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
